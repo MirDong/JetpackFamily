@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JetpackFamily</string>
+    <string name="lifecycle">This is a Lifecycle Example</string>
 </resources>
