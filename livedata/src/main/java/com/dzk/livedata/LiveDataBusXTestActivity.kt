@@ -4,14 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.dzk.livedata.bus.LiveDataBus
+
 /**
- * LiveDataBus数据观察页面
+ * LiveDataBusX数据观察页面
  */
-class LiveDataBusTestActivity : AppCompatActivity() {
+class LiveDataBusXTestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_live_data_bus_test)
-        LiveDataBus.with(DATA, String::class.java)?.observe(this) { data ->
+        LiveDataBus.with(INFO, String::class.java)?.observe(this) { data ->
             Toast.makeText(this, data, Toast.LENGTH_SHORT).show()
         }
     }

@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btLiveDataBusX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到LiveDataBusX订阅页面"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvName"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
         android:id="@+id/tvName"
@@ -26,4 +36,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvName"/>
 
+    <Button
+        android:id="@+id/btLiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到LiveData订阅页面"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btStart"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
